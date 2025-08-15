@@ -1,0 +1,49 @@
+Create a modern, responsive website called “Epidict” for a biomedical technology company developing seizure prediction devices using continuous neurotransmitter monitoring. The website should be clean, professional, and tech-oriented, with smooth animations and a minimal, scientific aesthetic.
+
+Requirements:
+1. **Technology Stack**:
+   - HTML5, CSS3 (TailwindCSS), and JavaScript (Vanilla JS or React)
+   - Responsive design for desktop, tablet, and mobile
+
+2. **Color Palette & Style**:
+   - Primary: Deep blue (#0A2540)
+   - Secondary: Electric teal (#17C3B2)
+   - Accent: Soft white (#F8FAFC)
+   - Fonts: Use a modern sans-serif like Inter or Roboto
+   - Minimalist layout with lots of whitespace and subtle gradients
+   - Smooth scroll animations
+
+3. **Pages/Sections**:
+   - **Landing Page (Home)**:
+     - Large hero banner with tagline: “Predict. Prevent. Protect.”
+     - Subheading: “Epidict’s cutting-edge monitoring technology anticipates seizures before they happen.”
+     - Call-to-action button: “Learn More”
+     - Background with animated particles or neuron-like network lines
+   - **About**:
+     - Company mission, values, and a brief story
+     - Timeline of development milestones
+   - **Technology**:
+     - Visual explanation of how the device works (simple diagram or animated SVG)
+     - Key features: Real-time monitoring, multi-biomarker tracking, AI-driven prediction
+   - **Research**:
+     - Overview of clinical trials and scientific validation
+     - Links to publications or press releases
+   - **Contact**:
+     - Contact form (name, email, message)
+     - Social media links
+     - Company address placeholder
+
+4. **Interactivity**:
+   - Animated hero text
+   - Smooth scrolling
+   - Hover effects on buttons and cards
+   - Mobile menu toggle animation
+
+5. **Footer**:
+   - Copyright: “© 2025 Epidict. All rights reserved.”
+   - Quick links to all site pages
+
+6. **Extra Details**:
+   - Code should be clean, well-commented, and easy to expand
+   - Include placeholder images and dummy text where real content is not provided
+   - Use semantic HTML tags for accessibility

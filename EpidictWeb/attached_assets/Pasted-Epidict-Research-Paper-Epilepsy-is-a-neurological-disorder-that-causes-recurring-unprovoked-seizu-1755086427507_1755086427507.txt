@@ -1,0 +1,229 @@
+Epidict Research Paper
+
+
+Epilepsy is a neurological disorder that causes recurring, unprovoked seizures due to abnormal electrical activity in the brain. It affects people of all ages and can vary widely in severity and type of seizures. While medication helps many manage their symptoms, about one-third of patients have drug-resistant epilepsy. The condition can impact daily life, safety, and mental health, and it often carries social stigma. Being able to predict seizures could greatly improve quality of life by helping individuals avoid dangerous situations, reduce anxiety, and better manage their condition.
+ Epidict is a seizure predicting device tracking the neurotransmitters IL-6 and glutamate found within the body. These two compounds are neurotransmitters instrumental in the regulation of the nervous systems and there are a couple of common changes that happen before all types of seizures. Any of the possible hormones and neurotransmitters below could be used:
+
+Molecule
+Change
+Timing
+Source
+Reproducibility
+Notes
+Glutamate (brain)
+📈 Increase
+~1–2 hours before
+Brain dialysate, MRS
+✅ Moderate–High
+More reliable in focal epilepsy; trend accelerates closer to seizure
+IL-6 (inflammatory cytokine)
+📈 Increase
+~2–6 hours before
+Blood (serum/plasma)
+✅ Moderate (certain types)
+Especially in febrile, autoimmune, or post-stroke epilepsy
+Melatonin
+📉 Decrease
+~2–4 hours before night seizures
+Blood, CSF
+✅ Moderate
+Circadian link; stronger in nocturnal epilepsy
+Cortisol
+📈 Increase
+~1–3 hours before
+Saliva, plasma
+⚠️ Low–Moderate
+Stress-sensitive patients; not always tied directly to seizures
+GABA (brain)
+📉 Slight drop
+Minutes before
+Brain dialysate
+✅ Short-term only
+Drop is seconds–minutes before, not hours
+Aspartate
+⚠️ Variable
+No consistent trend
+Brain tissue
+❌ Not reproducible
+Sparse and inconsistent data
+
+
+Biosensor Technology and Target Analytes
+Continuous glucose monitors (CGMs) have inspired the concept of analogous biosensors for neurotransmitters and inflammatory markers. The proposed system involves microneedle-based sensors that penetrate the skin (~1-2 mm) to access interstitial fluid (ISF), which contains measurable concentrations of glutamate, melatonin, and IL-6.
+Glutamate and melatonin are small molecules with relatively high concentrations in ISF, enabling near-real-time monitoring with electrochemical enzyme or aptamer-based sensors.
+IL-6, a larger cytokine protein, presents challenges due to lower concentrations and slower kinetics, typically requiring more complex immunoassays or sensitive aptamer-based detection.
+Sensor design includes separate modules: a combined glutamate and melatonin sensor patch for high-frequency (e.g., every 20 seconds) measurement and a dedicated IL-6 sensor operating at lower frequency (e.g., every 5 to 15 minutes). Microneedle arrays ensure minimally invasive, continuous access to ISF without penetrating blood vessels or nerves.
+
+Ethical Considerations in Preclinical Research
+Animal models, particularly mice, are commonly used to validate seizure-prediction technologies. Inducing seizures in mice can be ethically justified under strict guidelines if it advances scientific knowledge and potential human benefits, provided procedures minimize suffering and are approved by institutional animal care and use committees (IACUC).
+
+Hardware Design and Cost Analysis
+
+Category
+Product / Component
+Estimated Cost Range (per unit)
+Function / What It Does
+Bulk Supplier / Source
+Notes
+Melatonin + Glutamate Sensor
+Microneedle Patch Base
+$5 – $15
+Penetrates skin (~1 mm) to access ISF for small molecules
+Micropoint Technologies, 3M, Nanopass, custom manufacturers
+Polymer/silicon; scalable manufacturing
+
+
+Electrochemical Sensor Elements
+$5 – $15
+Electrochemical detection of glutamate and melatonin
+DropSens (Metrohm), Pine Research, custom screen-printing
+Multi-analyte capable; enzyme for glutamate, aptamer for melatonin
+
+
+Biorecognition Elements (Enzymes + Aptamers)
+$5 – $15
+Specific binding and catalytic activity for target analytes
+Sigma-Aldrich, BasePair Biotechnologies, Aptamer Group
+Aptamers reusable, enzymes require replacement
+
+
+Disposable Adhesive + Packaging
+$1 – $3
+Skin-safe adhesive and sterile packaging
+3M Medical Adhesives, ConvaTec
+Essential for skin comfort and patch stability
+IL-6 Sensor
+Microneedle Patch Base
+$5 – $15
+Penetrates skin to access ISF for larger proteins
+Same as above
+May require slightly larger or specialized needles
+
+
+Electrochemical Sensor Elements
+$5 – $20
+Magnetic bead or aptamer-based electrochemical detection of IL-6
+DropSens, custom microfluidic cartridge manufacturers
+Often uses bead-based immunoassay or aptamer tech
+
+
+Biorecognition Elements (Aptamers/Antibodies)
+$10 – $25
+High-specificity binding to IL-6
+Thermo Fisher, R&D Systems, BasePair Biotechnologies
+Antibodies costlier; aptamers cheaper but less mature
+
+
+Microfluidic Cartridge + Reagents
+$10 – $40
+Fluidics for sample processing, washing, reagent delivery
+Custom microfluidic manufacturers
+Disposable, replaced every 12 h to 24 h
+
+
+Disposable Adhesive + Packaging
+$1 – $3
+Skin-safe adhesive and sterile packaging
+3M Medical Adhesives, ConvaTec
+
+
+Reusable Electronics Puck
+MCU + Electrochemical Potentiostat
+$50 – $100
+Controls sensor readout, data acquisition, processing
+Analog Devices (ADuCM355 eval board), custom PCBs
+Key for signal processing
+
+
+BLE Module (e.g., nRF52840)
+$10 – $25
+Wireless communication with smartphone/app
+Nordic Semiconductor, Digi-Key, Mouser
+Integrated MCU + radio
+
+
+Micropumps & Microvalves (if needed)
+$50 – $150
+For fluid control in IL-6 microfluidics
+Bartels mp6 pumps, Takasago valves
+Optional for melatonin + glutamate if passive flow
+
+
+Battery (LiPo, 300–500 mAh)
+$5 – $10
+Powers the device
+Panasonic, Samsung, Adafruit
+Rechargeable lithium-polymer battery
+
+
+PCB + Housing + Assembly
+$30 – $70
+Electronics board and wearable enclosure
+Contract manufacturers, local assembly
+Custom designed for wearability
+Total Cost Summary
+Melatonin + Glutamate Sensor
+$16 – $48
+Combined patch costs
+See above
+Patch replaced every 3–7 days
+
+
+IL-6 Sensor
+$31 – $83
+Combined patch costs
+See above
+Cartridge replaced every 12–24 hours
+
+
+Reusable Electronics Puck
+$145 – $355
+Electronics puck cost
+See above
+One-time purchase; reusable for months
+
+
+Day 1 (Electronics + 1 Patch Each)
+$192 – $486
+Initial cost
+
+
+
+
+
+
+Subsequent Days (Patch Replacement Only)
+$47 – $131 per day
+Consumable-only daily cost
+
+
+
+
+
+
+Prototype Components
+Disposable patches: Include microneedle arrays, electrochemical sensors modified with enzymes or aptamers, and biorecognition elements.
+Reusable electronics puck: Houses microcontroller units (MCUs), potentiostats, Bluetooth Low Energy (BLE) modules, batteries, and enclosures.
+Cost Estimates
+Prototype disposable patches range approximately from $16 to $83 each, depending on analyte complexity.
+The reusable electronics puck prototype costs between $145 and $355.
+Initial deployment (electronics + 1 patch each) may range from $192 to $486.
+Subsequent consumable replacement costs are estimated at $47 to $131 daily.
+Cost Reduction Strategies
+Employ aptamer or molecularly imprinted polymer (MIP) sensors to reduce reliance on costly antibodies.
+Utilize passive microfluidics to minimize pumps and valves.
+Incorporate sensor regeneration techniques to extend disposable lifetime.
+Design for manufacturing scale to reduce unit costs substantially.
+
+App Development and Machine Learning Integration
+A companion smartphone app is essential for user interface, data visualization, alarm notification, and remote monitoring. Developing a fully featured app with cloud storage and machine learning (ML) algorithms to improve seizure prediction accuracy may cost tens to hundreds of thousands of dollars when outsourced.
+A basic app with features like seizure alarms, countdown timers, current and historical analyte levels, and developer data access can be developed personally using free development tools (e.g., Flutter, React Native). The primary investment would be time, developer accounts (~$124/year), and optional cloud hosting fees.
+Machine learning integration requires labeled seizure event data and biosensor inputs to train predictive models, demanding significant data science expertise and infrastructure.
+
+Data Management Using AP Computer Science A Knowledge
+Fundamental programming skills taught in AP Computer Science A (Java-based) provide a strong foundation for handling local data storage, simple data structures, file I/O, and implementing basic alarm logic within the app. Collaborating with or learning from an AP CSA teacher can assist in developing efficient data saving and retrieval methods.
+Advanced features such as cloud integration, real-time Bluetooth communication, and ML require expanding beyond AP CSA fundamentals, possibly involving additional coursework or partnerships.
+
+Conclusion
+Developing a seizure-predicting biosensor system combining advanced microneedle ISF sensing, user-friendly apps, and intelligent machine learning holds transformative potential. While technical challenges and costs exist, strategic sensor design, ethical preclinical research, incremental app development, and leveraging programming knowledge can accelerate progress. Future work includes prototype fabrication, clinical validation, and iterative refinement guided by user feedback and data analytics.
+
